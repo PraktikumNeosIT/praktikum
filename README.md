@@ -19,4 +19,10 @@
 * Commit (deutsch: geändert): Die Änderungen werden angeschaut, überprüft und schon mal lokal gespeichert.
 
 * Branch (deutsch: Zweig): Branching ist, von der Hauptentwicklungslinie abzuweichen und auf einem Nebenzweig (meist eine Kopie) weiter zu   arbeiten. 
- 
+ ----------------------
+#Wer nutzt Git?
+
+* Git wird von großen und kleinen Unternehmen benutzt.
+
+* Auch privat Leute benutzen Git da sie immer ihre einzelnen Schritte angucken/verfolgen können und auch andere diese einzelnen Schritte     nachvollziehen können. 
+ ----------------------
