@@ -20,9 +20,17 @@
 
 * Branch (deutsch: Zweig): Branching ist, von der Hauptentwicklungslinie abzuweichen und auf einem Nebenzweig (meist eine Kopie) weiter zu   arbeiten. 
  ----------------------
-#Wer nutzt Git?
+# Wer nutzt Git?
 
 * Git wird von großen und kleinen Unternehmen benutzt.
 
 * Auch privat Leute benutzen Git da sie immer ihre einzelnen Schritte angucken/verfolgen können und auch andere diese einzelnen Schritte     nachvollziehen können. 
  ----------------------
+# Was ist ein Repository?
+
+* Ein Repository ist grob beschrieben eine Datenbank.
+
+* In einem Repository befinden sich seine gespeicherten Dateien inklusive Ihrer vorherigen Versionen dadurch ist es einfach, den Aufbau   zu durchschauen.
+
+* Es gibt von allen veränderten Dateien auch noch Klone von den Vorgängern und den bereits vorhandenen Dateien.
+
