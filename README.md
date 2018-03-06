@@ -7,7 +7,7 @@
 
 * Vor allem im programmier Bereich, wird es benutzt um die Änderungen zu überwachen.
 
-***(Versionsverwaltungsprogramme sind Systeme die zur Erfassung von Änderungen in Dokumenten oder Dateien verwendet werden. Alle Datei Versionen werden mit einem zeit Stempel und Benutzer Erkennung gesichert und können später wieder hergestellt werden)***
+(Versionsverwaltungsprogramme sind Systeme die zur Erfassung von Änderungen in Dokumenten oder Dateien verwendet werden. Alle Datei Versionen werden mit einem zeit Stempel und Benutzer Erkennung gesichert und können später wieder hergestellt werden)
 ----------------------
 
 # Push, pull und commit 
