@@ -1,7 +1,7 @@
 # Was ist Git?
 
 
-**Git ist eine kostenlose Software**.
+* Git ist eine kostenlose Software.
 
 Git wird zur Versionsverwaltung von Dateien benutzt, die Dateien werden in Repositorys (repos) gespeichert.
 
