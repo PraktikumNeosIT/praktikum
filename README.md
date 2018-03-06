@@ -1,6 +1,5 @@
 # Was ist Git?
 
-_Kursiv_, __Fett__ und ___Fett kursiv___
 
 *Git ist eine kostenlose Software.*
 
