@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+<h1>G I T<h1>
+				</section>
+				<section>
+<h2>Was ist Git?</h2>
+				<FONT SIZE="5.8">
+<br><li>Git ist eine kostenlose Software.</li>
+
+<br><li>Git wird zur Versionsverwaltung von Dateien benutzt, die Dateien werden in Repositorys (repos) gespeichert.</li>
+
+ <br><li>Vor allem im programmier Bereich, wird es benutzt um die Aenderungen zu Ueberwachen.</li><br>
+ 
+ <li>(Versionsverwaltungsprogramme sind Systeme die zur Erfassung von Aenderungen in Dokumenten oder Dateien verwendet werden. Alle Datei Versionen werden mit einem zeit Stempel und Benutzer Erkennung gesichert und koennen spaeter wieder hergestellt werden) </li> </FONT> 
+
+				</section>
+				<section>
+<h2> Push, pull und commit </h2>
+<FONT SIZE="5.8">
+<br><li>Push (deutsch: druecken): push ist, wenn man eine Aenderung hochlaedt dann pusht man diese. </li>
+
+<br><li>Pull (deutsch: ziehen): Bei einem pull Ueberprueft er, ob alle Dateien auf aktuellen stand sind und wenn nicht werden die nicht aktuellen Dateien aktualisiert. </li>
+
+<br><li>Commit (deutsch: geaendert): Die Aenderungen werden angeschaut, Ueberprueft und schon mal lokal gespeichert.</li>
+
+<br><li>Branch (deutsch: Zweig): Branching ist, von der Hauptentwicklungslinie abzuweichen und auf einem Nebenzweig (meist eine Kopie) weiter zu arbeiten. </li>
+</FONT>
+				</section>
+				<section>
+<h2>Wer nutzt Git?</h2>
+<FONT SIZE="5.8">
+<br><li>Git wird von grossen und kleinen Unternehmen benutzt. </li>
+
+<br><li>Auch privat Leute benutzen Git da sie immer ihre einzelnen Schritte angucken/verfolgen koennen und auch andere diese einzelnen Schritte nachvollziehen koennen.  </li>
+
+</FONT>
+				</section>
+				<section>
+				<h2>Was ist ein Repository?</h2>
+<FONT SIZE="5.8">
+<br><li>Ein Repository ist grob beschrieben eine Datenbank. </li>
+
+<br><li>In einem Repository befinden sich seine gespeicherten Dateien inklusive Ihrer vorherigen Versionen dadurch ist es einfach, den Aufbau zu durchschauen.</li>
+ 
+ <br><li>Es gibt von allen veraenderten Dateien auch noch Klone von den Vorgaengern und den bereits vorhandenen Dateien. </li>
+</FONT>
+
+				</section>
+				<section>
+				<h1> 	Das war die Praesentation  </h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
