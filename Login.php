@@ -1,25 +1,17 @@
 
 <?php 
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=test1', 'root', null);
+
+$erlaubteBenutzer = array(/* key => benutzername, value => passwort */
+    'nico' => '1',
+    'finn' => 'Hallo'
+);
  
 if(isset($_GET['login'])) {
     $email = $_POST['email'];
     $passwort = $_POST['passwort'];
-    $statement = $pdo->prepare("SELECT * FROM test1 WHERE email = :email");
-    $result = $statement->execute(array('email' => $email));
-    $user = $statement->fetch();
-     print_r($user['passwort']); 
-		
-    //Überprüfung des Passworts
-    if ($user !== false && password_verify($passwort, $user['passwort'])) {
-        $_SESSION['userid'] = $user['id'];
-        die('Login erfolgreich. Weiter zu <a href="geheim.php">internen Bereich</a>');
-    } else {
-        $errorMessage = "E-Mail oder Passwort war ungültig<br>";
-    }
-    
 }
+
 ?>
 <!DOCTYPE html> 
 <html> 
@@ -34,9 +26,33 @@ if(isset($errorMessage)) {
 }
 ?>
  
+<?php 
+if(isset($_POST['email'])) {
+    print_r ($_POST['email']);
+    echo ($_POST['email']);
+    if ($_POST['email'] == 'nico') {
+        echo ("hallo");
+}
+}
+
+var_dump ($_POST);
+
+if ($email == 'nico'){
+    $hatGueltigesLogin = true;
+} 
+
+if ($hatGueltigesLogin == true) {
+var_dump ($hatGueltigesLogin);
+    die("Angemeldet");
+}
+
+
+
+?>
+
 <form action="?login=1" method="post">
 E-Mail:<br>
-<input type="email" size="40" maxlength="250" name="email"><br><br>
+<input type="text" size="40" maxlength="250" name="email"><br><br>
  
 Dein Passwort:<br>
 <input type="password" size="40"  maxlength="250" name="passwort"><br>
