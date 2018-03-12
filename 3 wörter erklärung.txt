@@ -1,0 +1,2 @@
+prepare: ist die abfragen von den daten nach den man im befehl fragt an die daten bank wo her man die infos für sein script bekommt
+
