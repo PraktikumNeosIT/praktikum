@@ -29,9 +29,8 @@ if(isset($errorMessage)) {
 <?php 
 if(isset($_POST['email'])) {
     print_r ($_POST['email']);
-    echo ($_POST['email']);
     if ($_POST['email'] == 'nico') {
-        echo ("hallo");
+
 }
 }
 
