@@ -1,4 +1,10 @@
-
+<!DOCTYPE html> 
+<html> 
+<head>
+  <title>Login</title>    
+</head> 
+<body>
+ 
 <?php 
 session_start();
 
@@ -13,19 +19,13 @@ if(isset($_GET['login'])) {
 }
 
 ?>
-<!DOCTYPE html> 
-<html> 
-<head>
-  <title>Login</title>    
-</head> 
-<body>
- 
+
 <?php 
 if(isset($errorMessage)) {
     echo $errorMessage;
 }
 ?>
- 
+
 <?php 
 if(isset($_POST['email'])) {
     print_r ($_POST['email']);
@@ -53,10 +53,10 @@ var_dump ($hatGueltigesLogin);
 <form action="?login=1" method="post">
 E-Mail:<br>
 <input type="text" size="40" maxlength="250" name="email"><br><br>
- 
+
 Dein Passwort:<br>
 <input type="password" size="40"  maxlength="250" name="passwort"><br>
- 
+
 <input type="submit" value="Abschicken">
 </form> 
 </body>
@@ -75,7 +75,7 @@ Dein Passwort:<br>
 |                         |
 |                         |
 |                         |
-|                   ---   |
+|                   ___   |
 |                         |
 |                         |
 |                         |
