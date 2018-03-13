@@ -9,46 +9,25 @@
 if ($email == 'bla' && $passwort == 'blubb') {
 
 }
-    // Email wird geprüft
 
 // SQL, WHERE, UND/AND
-        $statement1 = $pdo->prepare("SELECT * FROM test WHERE email = :email ");
-        $statement2 = $pdo->prepare("SELECT * FROM test WHERE passwort = :passwort ");
-        $statement1->execute(array(":email" => $email));
-        $statement2->execute(array(":passwort" => $passwort));
-        $user = $statement1 = $statement2->fetch();
 
-if (is_array($user)) {
-    print $user['nachname'];
-}
-var_dump ($user);
-   
-   
-$statement1 = $pdo->prepare("SELECT * FROM test WHERE email = :email "&&"SELECT * FROM test WHERE passwort = :passwort");
-$statement1->execute(array(":email" => $email));
-$user = $statement1->fetch();
+        // $statement1 = $pdo->prepare("SELECT * FROM test WHERE email = :email ");
+        // $statement2 = $pdo->prepare("SELECT * FROM test WHERE passwort = :passwort ");
+        // $statement1->execute(array(":email" => $email));
+        // $statement2->execute(array(":passwort" => $passwort));
+        // $user = $statement1 = $statement2->fetch();
 
-    
+        $statement1 = $pdo->prepare("SELECT * FROM test WHERE email = :email_in and passwort = :passwort_in");
+        $statement1->execute(array(":email_in" => $email, ":passwort_in" => $passwort));
 
+        $user = $statement1 ->fetch();
 
-
-        // if (is_array($user)) {
-        //     print "1";
-        //     if (is_array($pass)) {
-        //         if ($user['id'] == $pass['id']) {
-        //             print "3";
-        //             // Gültiger Benutzer/Passwort
-        //         }
-        //     } 
-        // }
-
-    // Beides wird zusammen geprüft auf richtigkeit
-
-        if ($user == true ) {
-            $_SESSION['userid'] = $user['id'];
-            die('Login erfolgreich. Weiter zu <a href="geheim.php">internen Bereich</a>');
+        if ($user == true) {
+            die('Login erfolgreich. Weiter zu <a href="geheim.php">internen Bereich</a>'
+            );
         } else {
-            $errorMessage = "E-Mail oder Passwort war ungültig<br>";
+            $errorMessage = "E-Mail oder Passwort war ungültig<br><br>";
         }
 
     }
@@ -57,7 +36,7 @@ $user = $statement1->fetch();
 <!DOCTYPE html> 
 <html> 
 <head>
-  <title>Login</title>    
+  <title>Login-PHP</title>
 </head> 
 <body>
  
