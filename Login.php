@@ -18,15 +18,10 @@ if(isset($_GET['login'])) {
     $passwort = $_POST['passwort'];
 }
 
-?>
-
-<?php 
 if(isset($errorMessage)) {
     echo $errorMessage;
 }
-?>
 
-<?php 
 if(isset($_POST['email'])) {
     print_r ($_POST['email']);
     if ($_POST['email'] == 'nico') {
