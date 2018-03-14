@@ -9,6 +9,7 @@
     if(isset($_GET['login'])) {
         $email = $_POST['email'];
         $passwort = $_POST['passwort'];
+   
 
         // SQL, WHERE, UND/AND
 
@@ -54,6 +55,7 @@
 if(isset($errorMessage)) {
     echo $errorMessage;
 }
+    $_SESSION['zaehler'] = false;
 
 if (isset($_SESSION['angemeldet']) AND ($_SESSION['angemeldet'] == true)) {
 
@@ -61,7 +63,7 @@ if (isset($_SESSION['angemeldet']) AND ($_SESSION['angemeldet'] == true)) {
 
     $sql = "SELECT * FROM test";
     foreach ($pdo->query($sql) as $row) {
-    echo '<a href="user.php?id=' . $row['id'] . '">Email: ' . $row['email'] . '</a><br>';
+    echo 'Email: <a href="user.php?id=' . $row['id'] . '">'. $row['email'] .  '</a><br>';
     echo "Passwort: ".$row['passwort']." <br><br>";
 
     }    
