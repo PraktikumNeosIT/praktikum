@@ -10,11 +10,9 @@
         $email = $_POST['email'];
         $passwort = $_POST['passwort'];
    
- $URL . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URL'];
 
-echo "URL = " .$URL;
-var_dump ($URL);
-Print_r ($URL);
+
+
 
         // SQL, WHERE, UND/AND
 
