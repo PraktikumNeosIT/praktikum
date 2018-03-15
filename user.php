@@ -21,3 +21,5 @@ $id = "1";
 }
 
 ?>
+
+<img src="http://www.bento.de/upload/images/penguin-falling.gif"  width="1880" height="1000">
