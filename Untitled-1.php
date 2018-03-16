@@ -1,4 +1,5 @@
 <?php 
+
     session_start();
     $pdo = new PDO('mysql:host=localhost;dbname=test', 'root', 'root');
 
@@ -10,17 +11,6 @@
         $email = $_POST['email'];
         $passwort = $_POST['passwort'];
    
-
-
-
-
-        // SQL, WHERE, UND/AND
-
-        // $statement1 = $pdo->prepare("SELECT * FROM test WHERE email = :email ");
-        // $statement2 = $pdo->prepare("SELECT * FROM test WHERE passwort = :passwort ");
-        // $statement1->execute(array(":email" => $email));
-        // $statement2->execute(array(":passwort" => $passwort));
-        // $user = $statement1 = $statement2->fetch();
 
         $statement1 = $pdo->prepare("SELECT * FROM test WHERE email = :email_in and passwort = :passwort_in");
         $statement1->execute(array(":email_in" => $email, ":passwort_in" => $passwort));
@@ -35,14 +25,7 @@
             $_SESSION['angemeldet'] = true;
             $_SESSION['vorname'] = $user['vorname'];
         }
-/*
-        if ($user == true) {
-            die('Login erfolgreich. Weiter zu <a href="geheim.php">internen Bereich</a>'
-            );
 
-        } else {
-            $errorMessage = "E-Mail oder Passwort war ungültig<br><br>";
-        }*/
 
     }
 

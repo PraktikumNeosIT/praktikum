@@ -1,25 +1,22 @@
- 
-<?php 
+ <?php 
 session_start();
     $pdo = new PDO('mysql:host=localhost;dbname=test', 'root', 'root');
 
 
 $id = $_GET ['id'];
 
-$id = "1";
+
     
         $statement1 = $pdo->prepare("SELECT * FROM test WHERE id = :id_in");
         $statement1->execute(array(":id_in" => $id));
-        $id = $statement1->fetch();
+        $row = $id = $statement1->fetch();
 
 
-        if ($id == "2"); {
+        if ($id === "3"); {
             echo "ID: ";
-            var_dump ($id);
+            echo $row[0].' <br>Email: '.$row[1].' <br>Passwort: '.$row[2].' <br>Vorname: '.$row[3].' <br>Nachname: '.$row[4].'<br />';
             echo "<br>";
 
 }
 
 ?>
-
-<img src="http://www.bento.de/upload/images/penguin-falling.gif"  width="1880" height="1000">
